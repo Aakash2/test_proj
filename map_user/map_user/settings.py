@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'manage_user',
 ]
 
 MIDDLEWARE = [
@@ -74,11 +75,14 @@ WSGI_APPLICATION = 'map_user.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+
+'default': {
         'ENGINE': 'django.db.backends.mysql',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'OPTIONS':{'read_default_file':'/opt/test_proj/map_user/db_conf.cnf',
-            },
+        'NAME': 'map_user',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

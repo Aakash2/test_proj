@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+import manage_user
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    #url(r'^register',manage_user.views.register),
 ]
