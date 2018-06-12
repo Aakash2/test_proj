@@ -19,5 +19,8 @@ import manage_user
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    #url(r'^register',manage_user.views.register),
+"""    url(r'^user_templates/(?P<path>.*)$', static.serve,  {'document_root': '/opt/test_proj/map_user/manage_user/templates/html'}),
+    url(r'^register',manage_user.views.register),
+    url(r'^login',manage_user.views.user_login),"""
+    
 ]
